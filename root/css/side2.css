@@ -1,0 +1,594 @@
+/* Fade-In animation speed */
+@keyframes fadeIn {
+  0% { opacity: 0; }
+  100% { opacity: 1; }
+}
+
+/* Background color */
+body{
+  background-color: #0a0a0a;
+  /* Fade-In animation */
+  animation: fadeIn 5s;
+  margin: 0;
+  font-family: HelveticaNeueLTPro-Md,Helvetica,Arial,sans-serif;
+  font-weight: 400;
+  line-height: 1.5;
+  color: #000;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  margin: 0;
+  padding: 0;
+  color: white;
+}
+
+/* Your navigation styles */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+/* navigation font, size, postion and color with animations*/
+#nav-links {
+  display: flex;
+  align-items: center;
+  position:fixed;
+  top: 0%;
+  left: 61%;
+  margin: 0;
+  z-index: 4;
+  padding: 20px 15px;
+  font-family: 'Poppins', sans-serif;
+}
+
+#nav-links::before {
+  content: "";
+  position: absolute;
+  width: 1000vh;
+  height: 100%;
+  background-color: #0a0a0a; /* Transparent overlay color */
+  z-index: 3; /* Ensure the overlay is behind the other elements */
+  margin: -1200px;
+  padding: 0;
+}
+
+#nav-links li {
+  margin: 0 12px;
+  z-index: 4;
+}
+
+#nav-links li a {
+  position: relative;
+  color: white;
+  font-size: 20px;
+  font-weight: 500;
+  padding: 6px 0;
+  text-decoration: none;
+  z-index: 4;
+}
+
+
+#nav-links li a:before {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  height: 3px;
+  width: 0%;
+  background: orange;
+  border-radius: 12px;
+  transition: all 0.4s ease;
+  z-index: 4;
+}
+
+#nav-links li a:hover:before {
+  width: 100%;
+  z-index: 4;
+}
+
+/* animation happens from middle to left and right */
+#nav-links li.center a:before {
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 4;
+}
+
+/* title container for writings postion*/
+#TittelContainer1 {
+  top: 10.5%;
+  left: 2%;
+  position: absolute;
+}
+
+#TittelContainer2,
+.TittelContainer8 {
+  position: relative;
+}
+
+#TittelContainer3,
+#TittelContainer4,
+#TittelContainer6,
+#TittelContainer7 {
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  position: absolute;
+  
+}
+
+
+#TittelContainer3 {
+  top: 240%;
+  left: 5%;
+  font-size: 75px;
+}
+
+#TittelContainer4{
+  top: 320%;
+  left: 3%;
+  padding-right: 53%;
+}
+
+#TittelContainer5 {
+  position: absolute;
+  top: 345%;
+  padding-left: 53%;
+  padding-right: 5%;
+}
+
+#TittelContainer6{
+  top:433%;
+  left: 3%;
+  padding-right: 53%;
+  z-index: 10;
+  position: absolute;
+}
+
+#TittelContainer7{
+  top: 454%;
+  padding-left: 53%;
+  padding-right: 5%;
+}
+
+/* Not dot on lists */
+li{
+  list-style-type: none;
+}
+
+/* size for titles with font, size */
+.Title1,
+.Title4,
+.Title5 {
+    font-family: 'Franklin Gothic Medium', Arial, sans-serif;
+}
+
+.Title1,
+.Title4,
+.Title5 {
+    padding-bottom: 1.1em;
+}
+
+.Title1 {
+    font-size: 24px;
+}
+
+.Title2 {
+    font-size: 7.1vw;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.Title3 {
+    font-size: 2em;
+}
+
+.Title4 {
+    font-size: 26px;
+}
+
+.Title5 {
+    font-size: 16px;
+}
+
+/* Adjust this value to control the spacing between li elements */
+#TittelContainer2 li{
+  margin-bottom: 20px; 
+}
+
+/* Adjust this value to control the spacing between li elements */
+#TittelContainer1 li{
+    margin-bottom: -80px; 
+}
+
+/* Position and size for photos */
+#Photo1,
+#Photo2 {
+  width: 45%;
+  top: 10%;
+  right: 5%;
+  position: absolute;
+}
+
+#Photo2 {
+  height: 80%;
+}
+
+#Photo3 {
+  width: 10%;
+  top: 20px;
+  left: -220%;
+  position: absolute;
+}
+
+#Photo4,
+#Photo9 {
+  width: 100%;
+  position: absolute;
+}
+
+#Photo4 {
+  top: 100%;
+}
+
+#Photo5,
+#Photo6,
+#Photo7,
+#Photo8 {
+  width: 42%;
+  position: absolute;
+}
+
+#Photo5 {
+  top: 260%;
+  left: 5%;
+}
+
+#Photo6 {
+  top: 285%;
+  right: 5%;
+}
+
+#Photo7 {
+  top: 370%;
+  left: 5%;
+}
+
+#Photo8 {
+  top: 395%;
+  right: 5%;
+}
+
+#Photo9 {
+  top: 513%;
+  left: 0%;
+}
+
+
+/* Postions for buttons */
+#button1{
+    top:60%;
+    left: 2.7%;
+}
+
+#button2{
+    top:66%;
+    left: 2.7%;
+}
+
+#button3{
+    top:72%;
+    left: 2.7%;
+}
+
+#button4{
+    top:78%;
+    left: 2.7%;
+}
+
+/* size, colors, animations for buttons*/
+.arrow-button {
+    position: absolute;
+    display: flex;
+    color: white;
+    border-color: transparent;
+    background-color:transparent;
+    transition: all .3s ease;
+    cursor: pointer;
+    align-items: center;
+    font-size: 24px;
+}
+
+
+.arrow-button > .arrow {
+    width: 4px;
+    height: 4px;
+    border-right: 2px solid white;
+    border-bottom: 2px solid white;
+    position: relative;
+    transform: rotate(315deg);
+    margin: 0 338px;
+    transition: all .3s ease;
+}
+
+
+.arrow-button > .arrow::before {
+    display: block;
+    background-color: white;
+    width: 20px;
+    transform-origin: bottom right;
+    height: 2px;
+    position: absolute;
+    opacity: 1;
+    bottom: calc(-2px / 2);
+    transform: rotate(45deg);
+    transition: all .3s ease;
+    content: "";
+    right: 0;
+}
+
+
+.arrow-button:hover > .arrow::before {
+  background-color: orange;
+}
+
+.arrow-button:hover > .arrow {
+    margin: 0 300px;
+    border-right: 2px solid orange;
+    border-bottom: 2px solid orange;
+}
+
+.arrow-button:hover {
+    color: orange;
+}
+
+/* size and background color for boxes that stays on photos*/
+#box1,
+#box2 {
+  position: absolute;
+  left: 6%;
+  width: 80%;
+  background-color: #000;
+  padding: 50px;
+  height: 25%;
+  margin: 20px;
+  z-index: 3;
+}
+
+/* Postions for boxes*/
+#box1 {
+  top: 185%;
+}
+
+#box2 {
+  top: 505%;
+}
+
+
+/* Phone version with specifik sizes of a photo or font with position*/
+@media screen and (max-width:480px) {
+  #nav-links {
+    left: 0%;
+    padding: 20px 15px;
+    z-index: 10;
+  }
+
+  #nav-links li a {
+    font-size: 15px;
+  }
+
+  #TittelContainer1, #TittelContainer2, #TittelContainer3, #TittelContainer4, #TittelContainer5, #TittelContainer6, #TittelContainer7 {
+    left: -5%;
+    right: 4%;
+  }
+  
+  #TittelContainer1, #TittelContainer2 {
+    top: 10.5%;
+    position: absolute;
+  }
+  
+  #TittelContainer3 {
+    top: 220%;
+    left: 5%;
+    font-size: 30px;
+  }
+  
+  #TittelContainer4 {
+    top: 267%;
+    padding-right: 0%;
+  }
+  
+  #TittelContainer5 {
+    top: 358%;
+    padding-left: 10%;
+  }
+  
+  #TittelContainer6 {
+    top: 450%;
+    padding-right: 0%;
+    z-index: 3;
+  }
+  
+  #TittelContainer7 {
+    top: 541%;
+    padding-left: 10%;
+  }
+  
+  .TittelContainer8 {
+    position: relative;
+  }
+  
+
+  .Title1{
+    font-size: 24px;
+  }
+
+  .Title2{
+    font-size: 13vw;
+  }
+
+  .Title3{
+    font-size: 1.2em;
+  }
+
+  .Title4{
+    font-size: 25px;
+    padding-bottom: 1em;
+    line-height: 1;
+  }
+
+  .Title5{
+    font-size: 15px;
+    padding-bottom: 1em;
+    line-height: 1.5;
+  }
+
+  #TittelContainer2 li{
+    margin-bottom: 20px; 
+  }
+  
+  #TittelContainer1 li{
+      margin-bottom: -23px; 
+  }
+
+
+  #button1{
+    top:105%;
+    left: 2.7%;
+  }
+
+  #button2{
+      top:111%;
+      left: 2.7%;
+  }
+
+  #button3{
+      top:117%;
+      left: 2.7%;
+  }
+
+  #button4{
+      top:123%;
+      left: 2.7%;
+  }
+
+  .arrow-button {
+    font-size: 15px;
+  }
+
+
+  .arrow-button > .arrow {
+    margin: 0 280px;
+    transition: all .15s ease;
+  }
+
+  .arrow-button:hover > .arrow {
+      margin: 0 260px;
+  }
+
+  #Photo1,
+  #Photo2 {
+    width: 93%;
+    top: 50%;
+    left: 3.5%;
+  }
+
+  #Photo2 {
+    height: 50%;
+  }
+
+  #Photo4,
+  #Photo9 {
+    position: absolute;
+  }
+
+  #Photo4 {
+    top: 130%;
+    width: 140%;
+  }
+
+  #Photo5,
+  #Photo6,
+  #Photo7,
+  #Photo8 {
+    width: 95%;
+    position: absolute;
+    left: 2.5%;
+  }
+
+  #Photo5 {
+    top: 230%;
+  }
+
+  #Photo6 {
+    top: 320%;
+  }
+
+  #Photo7 {
+    top: 410%;
+  }
+
+  #Photo8 {
+    top: 503%;
+  }
+
+  #Photo9 {
+    width: 150%;
+    top: 595%;
+    left: 0%;
+  }
+
+  #box1,
+  #box2 {
+    left: 0%;
+    padding: 0;
+    height: 50%;
+    margin: 0;
+    width: 100%;
+  }
+
+  #box1 {
+    top: 160%;
+  }
+
+  #box2 {
+    top: 635%;
+  }
+  
+}
+
+#accessibility-title {
+  font-size: 35px;
+  text-align: left;
+  color: white; 
+  padding: 80px;
+}
+
+
+#content {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  padding: 20px;
+}
+
+.content-item {
+  width: 30%; 
+  margin: 10px;
+  background-color: #fff; 
+  padding: 10px;
+  text-align: center;
+}
+
+.content-item img {
+  width: 100%;
+  height: auto;
+  margin-bottom: 10px;
+}
+
+.content-item p {
+  font-size: 14px;
+  color: #555; 
+}
+
+/* Mobile-specific styles for h1 */
+@media screen and (max-width: 768px) {
+  #accessibility-title h1 {
+      font-size: 30px; 
+  }
+  #accessibility-title p {
+    font-size: 25px; 
+}
+}
