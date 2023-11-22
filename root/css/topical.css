@@ -1,0 +1,510 @@
+/* Fade-In animation speed */
+@keyframes fadeIn {
+  0% { opacity: 0; }
+  100% { opacity: 1; }
+}
+
+/* Background color */
+body {
+  background-color: black;
+  /* Fade-In animation */
+  animation: fadeIn 5s;
+  margin: 0;
+}
+
+/* Title conatiners start */
+#TittelContainer1 a {
+  color: orange;
+}
+
+#TittelContainer2 a {
+  color: orange;
+}
+
+/* Title conatiners end */
+
+
+
+/* BackgroundPhoto start */
+#background1 {
+  top: 0;
+  left: 0;
+  z-index: 0;
+  position: absolute;
+  width: 99vw;
+  filter: brightness(50%);
+}
+
+/* BackgroundPhoto */
+#background2 {
+  top: 95vw;
+  left: 0;
+  z-index: 0;
+  position: absolute;
+  width: 99vw;
+  filter: brightness(50%);
+}
+
+/* Background is darker to help the reader*/
+#background3 {
+  top: 160vw;
+  left: 0;
+  z-index: 0;
+  position: absolute;
+  width: 99vw;
+  height: 55vw;
+  filter: brightness(30%);
+}
+
+/* BackgroundPhoto end */
+
+/* Adding very little opacity effect to end corners of sides start*/
+.PurpelBoxContainer {
+  position: absolute;
+  z-index: 1;
+  width: 99vw;
+  background-image: linear-gradient(to bottom, rgba(255, 0, 0, 0), #17192e, #17192e);
+}
+
+.PurpelBoxContainerTurn {
+  position: absolute;
+  z-index: 1;
+  width: 99vw;
+  background-image: linear-gradient(to top, rgba(255, 0, 0, 0), #17192e, #17192e);
+}
+
+.PurpelBoxContainerTurn2 {
+  position: absolute;
+  z-index: 1;
+  width: 99vw;
+  z-index: 5;
+  background-image: linear-gradient(to top, rgba(255, 0, 0, 0), #91795f, #17192e);
+}
+  
+.PurpelBoxContainerTurn3 {
+  position: absolute;
+  z-index: 1;
+  width: 99vw;
+  z-index: 5;
+  background-image: linear-gradient(to top, rgba(255, 0, 0, 0), #91795f, #91795f);
+}
+
+.PurpelBoxContainer2 {
+  position: absolute;
+  z-index: 1;
+  width: 99vw;
+  z-index: 5;
+  background-image: linear-gradient(to bottom, rgba(255, 0, 0, 0), #91795f, #91795f);
+}
+/* PurpelBoxConatiners end */
+
+/* PurpelBox postion start */
+#PurpelBox1 {
+  height: 20vw;
+  top: 60vw;
+  left: 0;
+}
+
+#PurpelBox {
+  height: 30vw;
+  top: 80vw;
+  left: 0;
+}
+
+#PurpelBox2 {
+  height: 20vw;
+  top: 140vw;
+  left: 0;
+}
+
+#PurpelBox3 {
+  height: 10vw;
+  top: 155vw;
+  left: 0;
+}
+
+#PurpelBox4 {
+  top: 2vw;
+  left: 0;
+}
+
+#PurpelBox5 {
+  height: 5vw;
+  top: 212vw;
+  left: 0;
+}
+/* PurpelBox postion end */
+
+
+
+@media screen and (max-width: 450px) {
+  /* Add responsive styles if needed */
+}
+
+
+@media screen and (max-width: 450px) {
+  /* Add responsive styles if needed */
+}
+
+
+/* Your navigation styles */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+/* Navogation bar start*/
+.nav-links {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0;
+  z-index: 2;
+  padding: 2vw 1.5vw;
+  font-family: 'Poppins', sans-serif;
+  position: relative; /* Ensure relative positioning for the ::before pseudo-element */
+}
+
+.nav-links::before {
+  content: "";
+  position: absolute;
+  width: 100vw;
+  height: 100vw;
+  background-color: #17192e; /* Transparent overlay color */
+  opacity: 0.5; 
+  z-index: 1; 
+  height: 300vw;
+  margin: 0;
+  padding: 0;
+
+}
+
+.nav-links li {
+  list-style: none;
+  margin: 0 1.2vw;
+  z-index: 2;
+}
+
+.nav-links li a {
+  position: relative;
+  color: white;
+  font-size: 2vw;
+  font-weight: 500;
+  padding: 0.6vw 0;
+  text-decoration: none;
+  z-index: 2;
+}
+
+.nav-links li a:before {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  height: 0.3vw;
+  width: 0;
+  background: orange;
+  border-radius: 1.2vw;
+  transition: all 0.4s ease;
+  z-index: 2;
+}
+
+/* Animations on hover*/
+.nav-links li a:hover:before {
+  width: 100%;
+  z-index: 2;
+}
+
+/* Animations*/
+.nav-links li.center a:before {
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 2;
+}
+
+/* Navigation bar end*/
+
+
+/* Titleconatiner Start*/
+#TittelContainer {
+  position: absolute;
+  z-index: 3;
+  list-style-type: none;
+  text-align: left;
+  left: 1vw;
+  padding-right: 2vw;
+  top: 8vw;
+}
+
+#TittelContainer1 {
+  left: 45vw;
+  margin-left: 3vw;
+  top: 69.75vw;
+  position: absolute;
+  z-index: 3;
+  list-style-type: none;
+}
+
+#TittelContainer2 {
+  right: 45vw;
+  top: 105vw;
+  margin-right: 12vw;
+  position: absolute;
+  z-index: 3;
+  list-style-type: none;
+}
+
+#TittelContainer3 {
+  top: 136.25vw;
+  padding-left: 33vw;
+  margin-block: 30vw;
+  position: absolute;
+  z-index: 3;
+  list-style-type: none;
+  text-align: center;
+}
+/* TitleConatiner End*/
+
+
+
+
+/* Title postions and font color and size Start*/
+.Title {
+  color: white;
+  font-size: 1vw;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.Title1 {
+  color: orange;
+  font-size: 7.0vw;
+  font-family: 'VinaSans', sans-serif; 
+}
+
+
+.Title2 {
+  color: antiquewhite;
+  font-size: 2vw;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.Title3 {
+  color: antiquewhite;
+  font-size: 1.4vw;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.Title4 {
+  color: antiquewhite;
+  font-size: 3vw;
+  font-family: 'VinaSans', sans-serif; 
+}
+
+.Title5 {
+  color: orange;
+  font-size: 4vw;
+  font-family: 'VinaSans', sans-serif;
+}
+
+.Title6 {
+  color: white;
+  font-size: 1.1vw;
+  width: 30vw;
+  text-align: center;
+  line-height: 1.5; 
+  overflow: hidden; 
+}
+
+.Title7 {
+  color: orange;
+  font-size: 6.7vw;
+  font-family: 'VinaSans', sans-serif; 
+}
+/* Title postions End*/
+
+
+/* Intro text*/
+.introtext {
+  color: antiquewhite;
+  font-size: 1.7vw;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-weight:lighter;
+}
+
+/* Poto elements postion and size Start*/
+.PhotoContainer {
+  position: absolute;
+  z-index: 3;
+}
+
+#Photo1 {
+  width: 40vw;
+  top: 73vw;
+  left: 5.5vw;
+  bottom: 5vw;
+  position: absolute;
+  z-index: 3;
+  padding: 0;
+}
+
+#Photo2 {
+  width: 47vw;
+  top: 108vw;
+  left: 50vw;
+  bottom: 5vw;
+  position: absolute;
+  z-index: 3;
+  padding: 0;
+}
+/* Poto elements postion and size Ends*/
+
+/* Special size for mobile screen and smaller screens than usual start*/
+@media screen and  (max-width:450px) {
+.Title {
+  font-size: 1vw;
+  left: -100vw;
+}
+
+.Title1 {
+  font-size: 7vw;
+  left: -100vw;
+}
+
+.Title2 {
+  font-size: 0.2vw;
+}
+
+.Title4 {
+  font-size: 1.5vw;
+}
+
+.Title3 {
+  font-size: 1.2vw;
+}
+
+.Title5 {
+  font-size: 4vw;
+}
+
+.Title6 {
+  font-size: 1vw;
+  overflow: scroll;
+}
+
+.Title7 {
+  font-size: 5vw;
+}
+
+/* Adding very little opacity effect to end corners of sides */
+.PurpelBoxContainer {
+width: 97vw;
+}
+
+.PurpelBoxContainerTurn {
+width: 97vw;
+}
+
+.PurpelBoxContainerTurn2 {
+width: 97vw;
+}
+
+.PurpelBoxContainerTurn3 {
+width: 97vw;
+}
+
+.PurpelBoxContainer2 {
+width: 97vw;
+}
+
+#TittelContainer3 {
+  top: 11.25vw;
+  margin: 28.68vw;
+  right: 15vw;
+}
+}
+/* Special size for mobile end*/
+
+
+/* Smaller screen sizes until phone size special positioning and sizes Start*/
+@media screen and (max-width:950px) {
+ 
+  #TittelContainer {
+    right: 10vw;
+    top: 10vw;
+  }
+  
+  #TittelContainer1 {
+    left: 35vw;
+    margin-right: 2vw;
+    top: 70vw;
+  }
+  
+  #TittelContainer2 {
+    right: 45vw;    
+    top: 105vw;
+    margin-right: 10vw;
+    position: absolute;
+    z-index: 3;
+    list-style-type: none;
+  }
+  
+  #TittelContainer3 {
+    top: 143.25vw;
+    margin: 23.68vw;
+    right: 8vw;
+   
+   
+  
+  }
+  
+
+.nav-links::before {
+  width: 100vw;
+}
+
+
+/* BackgroundPhoto */
+#background1 {
+width: 100vw;
+}
+
+/* BackgroundPhoto */
+#background2 {
+width: 100vw;
+}
+
+#background3 {
+width: 100vw;
+}
+
+/* Adding very little opacity effect to end corners of sides */
+.PurpelBoxContainer {
+width: 100vw;
+}
+
+.PurpelBoxContainerTurn {
+width: 100vw;
+}
+
+.PurpelBoxContainerTurn2 {
+width: 100vw;
+}
+
+.PurpelBoxContainerTurn3 {
+width: 100vw;
+}
+
+.PurpelBoxContainer2 {
+width: 100vw;
+}
+
+
+#Photo1 {
+  width: 37.5vw;
+  top: 74vw;
+  left: 3vw;
+  bottom: 5vw;
+}
+
+}
+/* Special positioning and sizes for smaller screens End*/
+
+
+
+@import url('https://fonts.googleapis.com/css?family=Open+Sans&display=swap');
